@@ -1,0 +1,55 @@
+.progress{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 50px;
+}
+.progress span p{
+    margin: 0px 8px;
+    word-break: normal;
+    font-size: 11px;
+}
+.progress div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.progress input {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;    
+    background-color: gainsboro;
+}
+.current{
+    color: #646464;
+    min-width: 35px;
+    max-width: 35px;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.currentTimeSecond{
+    color: #646464;
+    min-width: 35px;
+    max-width: 35px;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width:1124px) {
+    .progress{
+        margin-right: 0;
+    }
+}
+
+@media (max-width:770px) {
+    .current{
+        display: none;
+    }
+    .currentTimeSecond{
+        display: none;
+    }
+}

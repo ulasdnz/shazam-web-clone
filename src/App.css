@@ -1,0 +1,22 @@
+.player{
+    position: absolute;
+    width: 57%;
+    right: 1.2%;
+    top: 45rem;
+    z-index: 99;
+}
+
+@media (max-width:1024px) {
+    .player{
+        width: 45%;
+    }
+}
+
+@media (max-width:770px) {
+    .player{
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        right: 0;
+    }
+}

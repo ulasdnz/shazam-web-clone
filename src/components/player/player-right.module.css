@@ -1,0 +1,23 @@
+.playerRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.soundBar{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -1px;
+}
+
+
+@media (max-width:770px) {
+    .playerRight{
+        display: none;
+    }
+}

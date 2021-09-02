@@ -1,0 +1,71 @@
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2%;
+    margin-top: 1rem;
+      max-width: 1128px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.button{
+    position: relative;
+      width: 3rem;
+      height: 3rem;
+      background-color: #08f;
+      border: 0;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+  }
+  .button:hover{
+      cursor: pointer;
+  }
+
+  .restrict{
+  width: 1158px;
+  padding-left: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-mask: linear-gradient(
+    90deg
+    ,transparent 0,#fff 15px,#fff calc(100% - 15px),transparent 100%);
+        mask: linear-gradient(90deg,transparent 0,#fff 15px,#fff calc(100% - 15px),transparent 100%);
+  
+   }
+  
+  .button:disabled{
+    background-color: #e4e4e4;
+  }
+ 
+  .cards{
+    height: 37rem;
+    width: 1158px;
+  }
+
+  .button > svg{
+    width: 14.4px;
+    height: auto;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate3d(-50%, -50%, 0);
+ }
+ .button > .buttonSvgPrev{
+     transform: rotate(180deg);
+     margin-top: -.65rem;
+     margin-left: -.75rem;
+
+ }
+ .button > .buttonSvg{
+     margin-left: .2rem;
+ }
+
+ @media (max-width:1128px){
+  .buttons{
+    display: none;
+  }
+}

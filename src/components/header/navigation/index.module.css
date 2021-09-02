@@ -1,0 +1,138 @@
+.navigation{
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5555;
+    background-color: black;
+    transition: transform .3s cubic-bezier(.4,.2,0,1);
+overflow-y: scroll;
+animation: navigation .5s cubic-bezier(.4,.2,0,1);
+animation-fill-mode: forwards;
+}
+@keyframes navigation {
+    from{   width: 0;
+ }
+    to{
+        width: 100vw;
+    }
+}
+
+.shazam{
+    width: 12rem;
+    height: 34px;
+    margin: 17px 0 0 2.5%;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 27px;
+    padding-right: 5%;
+}
+.closeMenu{
+    fill: white;
+    font-size: 1.6rem;
+    width: 1em;
+    height: 1em;
+}
+
+.list{
+    padding: 50px 0 0 0;
+    list-style: none;
+    outline: 0;
+    text-decoration: none;
+ 
+}
+
+.list > li > *{
+    list-style: none;
+    outline: 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 35px 0 25px 55px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.list> li:nth-child(1) > a{
+    padding: 25px 0 25px 55px;
+}
+
+.connection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 8px;
+    min-height: 120px;
+    margin: 0 55px;
+    padding: 0 40px;
+}
+.connectionText{
+    padding: 15px;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    max-width: calc(100% - 190px);
+}
+.connectionButton{
+    background-color: rgba(255,255,255,.15);
+    border: 0;
+    width: 150px;
+    height: 4rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.musicSvg{
+    width: 6rem ;
+    height: 1.5rem;
+    color: white;
+    position: relative;
+    margin-top: -4px;
+    flex-shrink: 0;
+}
+
+.connection  span{
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -.7px;
+}
+
+@media (max-width:1150px) {
+    .connectionButton{
+        padding: 0 15px;
+        
+    }
+    
+}
+@media (max-width:600px) {
+    .connection{
+        margin: 0 10px;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .connectionText{
+        text-align: center;
+        max-width: none;
+    }
+    .connectionButton{
+    margin-right: auto;
+    margin-left: auto;
+    }
+}

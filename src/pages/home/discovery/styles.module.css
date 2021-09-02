@@ -1,0 +1,136 @@
+.home{
+  width: 100%;
+  padding: 30px 0 60px;
+  background-color: #f8f8f8;
+  margin-top: 6rem;
+  overflow: hidden;
+}
+
+.artistShowcase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: 3rem;
+}
+.artistShowcaseItem:nth-of-type(1) {
+  position: relative;
+  left: 40px;
+}
+.artistShowcaseItem:nth-of-type(2) img {
+  position: relative;
+  z-index: 2;
+  width: 160px;
+  height: 160px;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 30%);
+}
+.artistShowcaseItem:nth-of-type(3) {
+  position: relative;
+  right: 40px;
+}
+.artistShowcase > a {
+  height: auto;
+}
+.showImg{
+  display: block;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  width: 119px;
+  height: 119px;
+  object-fit: cover;
+}
+.artistShowcaseItem > img{
+  display: block;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.head > h2{
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #646464;
+  letter-spacing: .5px;
+  font-weight:900;
+}
+
+.head > h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: 100%;
+  letter-spacing: .5px;
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 1;
+ max-width: 670px;
+ text-align: center;
+  margin-bottom: 1rem;
+}
+
+.head > p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #646464;
+}
+
+.caption > h2{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  width: 56%;
+}
+.caption{
+  padding: 10px 0;
+  margin: 40px auto 30px;
+  max-width: 1128px;
+  width: 95vw;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative;
+}
+.showAll{
+  position: absolute;
+  right: 0rem;
+  top: 1.4rem;
+  text-decoration: none;
+  color: #08f;
+  font-weight: 900;
+  letter-spacing: .5px;
+  font-size: 1.5rem;
+}
+
+.captionSecond > h2{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.captionSecond{
+  padding: 10px 0;
+   margin: 40px auto 30px;
+   max-width: 1128px;
+   width: 95vw;
+   border-bottom: 1px solid #e4e4e4;
+   position: relative;
+}
+
+
+@media (max-width:1128px) {
+
+  .songs{
+    margin-left: 1vw;
+  }
+}
+
+@media (max-width:650px) {
+
+  .head > h1{
+    font-size: 32px;
+  }
+
+}

@@ -1,0 +1,294 @@
+
+.popup{
+    position: fixed;
+    top: 69px;
+    width: 100vw;
+    height: 450px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0;
+    z-index: 9999;
+    overflow-y: scroll;
+    opacity: 0;
+    animation-name: box;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes box {
+    from {opacity: 0;  width: 0; height: 0;}
+    to {opacity: 1; width: 100vw;
+        height: 450px;}
+  }
+  .popupWrap{
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 999;
+      background-color: rgba(0, 0, 0, 0.705);
+  }
+
+  .inputWrap{
+      position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background: 0 0!important;
+    margin-top: .7rem;
+    padding: 2px 45px 2px 7px;
+    opacity: 0;
+  animation-delay: .2s;
+  animation-name: boxSecond;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  }  
+
+
+  .input{
+    padding: 9px 50px 10px 10px;
+    width: 100%;
+    color: #08f;
+    text-shadow: 0 0 0 #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    outline: 0;
+  }
+  .input::placeholder{
+      font-size: 15px;
+  }
+  .iconCross{
+    fill: #08f;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    padding-right: 1.4rem;
+    box-sizing: content-box;
+  }
+
+  .iconCrossWrap{
+    background: 0 0;
+    border: none;
+    outline-offset: 2px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    opacity: 0;
+    animation-delay: .2s;
+    animation-name: boxSecond;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes boxSecond {
+    from {opacity: 0; }
+    to {opacity: 1; }
+  }
+
+.after > h2{
+  color: #08f;
+  box-sizing: content-box;
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-family: NeueMontreal Arial, Helvetica, sans-serif;
+}
+.afterSvg {
+  color: #646464;
+  font-size: 1.7rem;
+  box-sizing: content-box;
+  padding: 12px 25px 0 25px;
+  text-align: center;
+  font-family: NeueMontreal,Arial,sans-serif;
+
+}
+.BoxSvg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 9.3rem;
+}
+
+
+.results{
+    font-size: 16px;
+    color: #08f;
+    font-weight: 700;
+    padding: 10px 15px 8px 15px;
+  }
+  
+  .image{
+    width: 5rem;
+    height: 5rem;
+  }
+  .imageItem{
+    width: 5rem;
+    height: 5rem;
+    background-size: 100%;
+    background-size: contain;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  .songInfoWrap{
+    padding-left: 13px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 7rem;
+  }
+  .songInfoWrap:hover{
+    background-color: #eee;
+    cursor: pointer;
+  }
+  .songInfoWrap:hover > *{
+    cursor: pointer;
+  }
+  
+  .songInfoWrap:hover .infoTitle{
+  color: #08f;
+  cursor: pointer;
+  }
+  
+  .image::after{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width:3px;
+    height: 100%;
+    background-color:  #08f;
+  }
+  .songInfoWrap:hover .image::after{
+    opacity: 1;
+  }
+  
+  .image::before{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    width: 8.5px;
+    height: 100%;
+    background-color:  rgb(231, 231, 231);
+  }
+  .songInfoWrap:hover .image::before{
+    opacity: 1;
+  }
+  
+  
+  
+  .info{
+    padding-left: 10px;
+  }
+  
+  .infoTitle{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: -1px;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .infoTitle:hover{
+    text-decoration: underline;
+  }
+  
+  .infoSubtitle{
+    color: #949494;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .infoSubtitle:hover{
+    text-decoration: underline;
+  }
+  
+  .artistInfoWrap{
+    padding-left: 13px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 7rem;
+  }
+  .artistInfoWrap:hover{
+    cursor: pointer;
+  }
+  
+  .artistInfoWrap:hover > *{
+    cursor: pointer;
+  }
+  
+  .artistName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -1px;
+    color: #242424;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  
+  .artistImage{
+    width: 5rem;
+    height: 5rem;
+    background-size: 100%;
+    background-size: contain;
+    border-radius: 50%;
+  }
+  .artistImageCover{
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .artistImageCover::before{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width:3px;
+    height: 100%;
+    background-color:  #08f;
+  }
+  
+  .artistInfoWrap:hover .artistImageCover::before{
+    opacity: 1;
+  }
+  
+  .artistInfoWrap:hover .artistName{
+    text-decoration: underline;
+  }
+  .artistInfoWrap:hover{
+    background-color: #eee;
+  }
+  
+  .button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }

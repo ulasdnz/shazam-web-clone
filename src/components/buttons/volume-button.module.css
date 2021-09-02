@@ -1,0 +1,18 @@
+.volumeButton{
+    border: 0;
+    background: transparent;
+    width: 32px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volumeButton > svg{
+    width: 22px;
+    height: auto;
+}
+.volumeButton:hover{
+    cursor: pointer;
+}

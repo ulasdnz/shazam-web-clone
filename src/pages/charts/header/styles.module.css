@@ -1,0 +1,549 @@
+
+.chartHeader{
+  padding-top: 7.7rem;
+  position: relative;
+  height: 342px;
+  z-index: 1;
+  box-sizing: content-box;
+   box-shadow: inset 100px 200px 100px 300px rgba(3, 0, 20, 0); 
+}
+
+.countryMenu{
+  width: auto;
+  height: auto;
+  position: relative; 
+  margin-left: 3.4rem;
+  margin-top: 1.4rem;
+  border-radius: 8px;
+  width: 270px;
+  height: 50px;
+  padding: 0;
+  background-color: rgba(255,255,255,.15);
+}
+
+.countryMenuSmall{
+  backdrop-filter: blur(60px);
+    background-color: rgba(255,255,255,.15);
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 50px 15px 15px;
+    margin-bottom: 1rem;
+    outline: 0;
+}
+.countryMenuSmallWrap{
+  background-color: transparent;
+  backdrop-filter: blur(60px);
+  position: fixed;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  width: 100vw;
+  margin-top: -3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.countryButton {
+  margin-left: 0;
+  width: 270px;
+  height: 51px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  padding: 0;
+  position: relative;
+  color: white;
+  padding:14px 50px 14px 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  display: none;
+}
+
+.countryArrow{
+  position: absolute;
+  color: white;
+  width: 12px;
+  height: auto;
+  right: 1.5rem;
+  top: 2rem;
+  transform: rotate(90deg);
+}
+
+
+.menuActor{
+  color: white;
+  padding-left: 8px;
+  padding-top: 7px;
+  font-size: 16px;
+}
+.menuActor:hover{
+  cursor: default;
+  user-select: none;
+}
+.selectSvg{
+  position: relative;
+  transform: rotate(90deg);
+  right: 8%;
+  top: -.3rem;
+  width: 13.1px;
+  height: auto;
+  color: white;
+}
+
+.menuWrapper{
+  max-width: 270px;
+  max-height: 384px;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 20px);
+  right: -1px;
+  min-width: 270px;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 40px 40px 0 rgb(0 0 0 / 10%);
+  border: solid 1px #e4e4e4;
+  background-color: #ffffff;
+  color: #242424;
+  font-weight: 500;
+  opacity: 0;
+  transform-origin: top;
+  transition: all .3s cubic-bezier(.4,.2,0,1);
+  animation-name: box;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+  }
+@keyframes box {
+  from {opacity: 1;  width: 0; height: 0;}
+  to {opacity: 1; width: 270px;
+      height: 384px}
+}
+
+
+.menuWrapper::before{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    transform: rotate(45deg);
+}
+.actorOptions{
+  max-height: 325px;
+  padding-top: 1.3rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: auto;
+  height: auto;
+}
+
+
+.actorOptions > div{
+  padding: 15px 40px 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: NeueMontreal, Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+.actorOptions > div{
+  text-align: start;
+}
+
+.actorOptions > div:hover{
+  background-color: #F8F8F8;
+}
+
+
+.menuWrapper > form{
+width: 270px;
+  display: block;
+
+  position: relative;
+  padding: 15px 15px 0 15px;
+  margin-bottom: .2rem;
+}
+
+.menuSvg{
+  color: #949494;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 3.3rem;
+  top: 2.8rem;
+}
+
+.menuText{
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  font-weight: 600;
+  outline: 0;
+  background-color: transparent;
+  padding: 12px 34px 10px 20px;
+  border-radius: 8px;
+  border: solid 1px #e4e4e4;
+  border-radius: 8px;
+  width: 100%;
+  color: #242424;
+  font-stretch: 100%;
+  opacity: 0;
+  animation-delay: .05s;
+  animation-name: box;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box {
+  from {opacity: 0;}
+  to {opacity: 1; }
+}
+.menuText::placeholder{
+  color: #BABABA;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+
+.chartTitle{
+  margin-left: 3.5rem;
+  width: 1128px;
+  max-width:95%;
+  height: 215px;
+  display: flex;
+  align-items: center;
+  overflow:hidden;
+}
+
+.content{
+  overflow:hidden;
+}
+
+
+.playButton{
+  top: -3px;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.7);
+}
+.playButton:hover{
+  cursor: pointer;
+}
+.titleSvg{
+  opacity: 0;
+  width: 18px;
+  height: 21px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate3d(-50%,-50%,0);
+  transition: all .3s cubic-bezier(.4,.2,0,1);
+  animation-name: PlayPause;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+
+}
+
+
+.titleSvg2{
+  opacity: 0;
+  width: 18px;
+  height: 22.19px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate3d(-50%,-50%,0);
+  transition: all .3s cubic-bezier(.4,.2,0,1);
+  animation-name: PlayPause;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+}
+@keyframes PlayPause {
+  from {opacity: 0;  width: 0; height: 0;}
+  to {opacity: 1; width: auto;
+      height: 22.19px}
+}
+
+.chartSecond{
+  color: white;
+  margin-left: 2.3rem;
+}
+
+.chartSecond > div{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .22px;
+  text-transform: uppercase;
+}
+
+.chartSecond > h1{
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: .78px;
+  padding: 5px 0 0;
+}
+.chartSecond > h2{
+  font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    opacity: .7;
+    padding-top: 5px;
+}
+
+
+.chartNav{
+  position: relative;
+    z-index: 0;
+    margin: 0 .2%;
+    padding: 0 2.5%;
+    font-size: 0;
+    white-space: nowrap;
+    display: flex;
+}
+.downloadCsv{
+  position: absolute;
+  right: 2.5%;
+  top: -.6rem;
+  color: white;
+  
+}
+.downloadCsv>a{
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: inherit;
+}
+.downloadCsv:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.csvSvg{
+  fill: white;
+  position: relative;
+  top: .65rem;
+  right: .5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.chartNav> button{
+  position: relative;
+  display: inline-block;
+  padding: 11px 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  border-radius: 22.5px;
+  background-color: rgba(255,255,255,.15);
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: -.5rem;
+  margin-right: 1rem;
+}
+
+
+
+.citiesSmall{
+  position: relative;
+  padding: 11px 25px 11px 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  border-radius: 22.5px;
+  background-color: rgba(255,255,255,.15);
+  border: none;
+  outline: 0;
+  margin-left: 10px;
+  width: 10rem;
+  text-overflow: ellipsis;
+}
+.citiesSmall option{
+  color: white;
+}
+.navArr{
+  transform: rotate(90deg);
+  position: absolute;
+  top: 1.4rem;
+  width: 8px;
+  height: 12px;
+  right: 13px;
+    color: white;
+}
+.navSmall{
+  position: relative;
+  display: none;
+}
+
+.navArrow{
+  transform: rotate(90deg);
+  position: relative;
+  top: .2rem;
+  width: 7.38px;
+  height: 11.99px;
+  margin-left: 1rem;
+  color: inherit;
+}
+
+
+
+.track{
+  position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    border: solid 1px rgba(255,255,255,.1);
+
+}
+.img{
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  object-fit: cover;
+}
+.rotate{
+  position: absolute;
+  top: -233px;
+    right: 113px;
+    transform: rotate(-45deg);
+}
+.track:nth-child(1) {
+  top: 114px;
+  right: 330px;
+}
+
+.track:nth-child(2) {
+  top: -58px;
+  right: 330px;
+}
+
+.track:nth-child(3) {
+  top: 114px;
+  right: 159px;}
+
+
+
+  @media (max-width:900px) {
+    .rotate{
+      right: 0px;
+    }
+  }
+  
+  
+  @media (max-width:770px) {
+    .chartSecond > *{
+      max-width: 75vw;
+    }
+    .countryMenuSmallWrap{
+      display: flex;
+      padding-left: .6rem;
+    }
+
+    .downloadCsv{
+      display: none;
+    }
+    .track{
+      width: 120px;
+      height: 120px;
+    }
+    .track:nth-child(1) {
+      top: 154px;
+      right: 290px;
+    }
+    
+    .track:nth-child(2) {
+      top: 18px;
+      right: 290px;
+    }
+    
+    .track:nth-child(3) {
+      top: 154px;
+      right: 159px;}
+  
+      .playButton{
+        position: absolute;
+        width: 48px;
+      height: 48px;
+        right: 1.6rem;
+        top: 65%;
+      }
+      .titleSvg2{
+        width: 14px;
+        height: auto;
+      }
+      .titleSvg{
+        width: 14px;
+        height: auto;
+      }
+      .chartTitle{
+        margin-left: 0;
+        margin-top: 65px;
+      }
+      .chartSecond{
+        margin-left: 1.5rem;
+        margin-top: 5rem;
+      }
+      .chartSecond > h1{
+        font-size: 30px;
+        letter-spacing: .47px;
+        padding-top: 10px;
+      }
+      .chartNav{
+        overflow-x: scroll;
+      }
+      .chartNav > button{
+        margin-top:0;
+        padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 14px;
+      }
+      .countryMenu{
+        display: none;
+      }
+      .chartNav .cities{
+        display: none;
+      }
+      
+      .chartNav .genre{
+        display: none;
+      }
+      .navSmall{
+        display: inline-block;
+      }
+      .chartNav > button{
+        margin-right: 0;
+      }
+      .chartNav > button:first-of-type{
+        margin-right: 1rem;
+      }
+  }
+
+
+  

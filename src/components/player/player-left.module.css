@@ -1,0 +1,141 @@
+.playerLeft{
+    width: 397px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -11px;
+}
+.svgWrapper{
+    margin-left: 44px;
+}
+.svgWrapper{
+    background-color: #616e73;
+    width: 73px;
+    height: 24px;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .svg{
+     color: white;
+    width: 49px;
+    height: auto;
+    padding-top: 1px;
+}
+.imgContainer{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.imgContainer > img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    min-width: 250px;
+    max-width: 250px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.34;
+    color: #242424;
+    letter-spacing: .5px;
+    height: 16px;
+}
+.subhead{
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    color: #949494;
+    letter-spacing: .5px;
+    height: 16px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.details{
+    flex: 1 1 100%;
+    min-width: 0;
+}
+.text{
+    font-size: 10px;
+    color: #646464;
+    letter-spacing: .5px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-top: -.7rem;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+@media (max-width:1024px) {
+    .container{
+        margin: 0;
+        min-width: 20rem;
+    }
+    .svgWrapper{
+        margin: 10px;
+        margin-left: 4rem;
+    }
+
+}
+
+
+
+@media (max-width:770px) {
+    .imgContainer{
+        display: none;
+    }
+    .details{
+        order: 1;
+    }
+    .svgWrapper{
+        order: -2;
+        margin-left: 3px;
+        margin-top: 12px;
+    }
+   
+    .playerLeft{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .details{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .details > a{
+        line-height: 1.8;
+    }
+  
+}
+
+@media (max-width:370px) {
+    .subhead{
+        max-width: 155px;
+    }
+}

@@ -1,0 +1,35 @@
+.svgWrap{
+  display: none;
+  padding: 10px 10px 10px 10px;
+  margin-left: 1.5rem;
+  margin-top: 3px;
+}
+.hamburgerSvg{
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  display: none;
+
+}
+
+.searchSvg{
+  width: 20px;
+  height: 20px;
+  margin-right: 2rem;
+  margin-top: -1px;
+  display: none;
+}
+
+@media (max-width:1024px) {
+  .svgWrap{
+    display: inline-block;
+  }
+  .hamburgerSvg{
+    display: inline-block;
+  }
+}
+@media (max-width:480px) {
+  .searchSvg{
+    display: inline-block;
+  }
+}

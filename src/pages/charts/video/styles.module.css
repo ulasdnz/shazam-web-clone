@@ -1,0 +1,254 @@
+.content{
+  overflow: hidden;
+  margin-top: 2rem;
+  padding: 0 15px;
+  background-color:white;
+}
+
+
+.wrap{  
+  position: relative;
+  height: 0;
+  padding: 28%;
+  overflow: hidden;
+  border-radius: 8px;
+  z-index: 0;
+}
+.video{
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100% !important;
+ height: 110% !important;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity .3s linear;
+  border-radius: 8px;
+}
+.wrap::before{
+  content: "";
+  position: absolute;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+z-index: 1;
+opacity: .35;
+border: 0;
+border-radius: 8px;
+}
+
+.muteIcon{
+  width: 28px;
+  height: 28px;
+  -webkit-backdrop-filter: blur(41.7px);
+  backdrop-filter: blur(41.7px);
+  background-color: rgba(0,0,0,.2);
+  position: absolute;
+  z-index: 10;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mute{
+  color: white;
+  fill: white;
+}
+
+.bottom{
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  font-family: NeueMontreal,Arial,sans-serif;
+  opacity: 1;
+  transition: opacity .3s cubic-bezier(.4,.2,0,1);
+}
+
+.bottomContent{
+  display: flex;
+  color: #fff;
+  max-width: 500px;
+  margin-left: 0;
+
+}
+.popupInfo{
+  z-index: 1999;
+  position: fixed;
+  top: 3.5rem;
+  left: 1.5rem;
+}
+
+.caption{
+  font-size: 12px;
+  letter-spacing: .5px;
+  font-size: 12px;
+  color: rgba(255,255,255,.8);
+  margin-bottom: 2px;
+}
+.caption > strong > span{
+  color: white;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+  letter-spacing: -.36px;
+  color: white;
+}
+.subtitle{
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(255,255,255,.8);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicSvgWrap{
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: .3rem;
+  padding: 5px 10px 6px;
+  background-color: #242424;
+  border-radius: 20px;
+  width: 66px;
+  height: 22px;
+  box-sizing: border-box;
+}
+.musicSvg{
+  fill: white;
+  color: white;
+  width: 46px;
+  height: auto;
+}
+
+.videoPopup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.popupMusicSvgWrap{
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  color: #242424;
+  position: fixed;
+  z-index: 1999;
+  bottom: 2rem;
+  left: calc(50% - 69px);
+}
+.popupMusicSvg{
+  display: inline-block;
+  margin-left: 2px;
+  width: 47px;
+  height: 12px;
+  fill: #242424;
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+.crossIcon{
+  position: fixed;
+  z-index: 1000;
+  top: 35px;
+  right: 15px;
+  background-color: rgba(255,255,255,.15);
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 18px;
+}
+.crossSvg{
+  fill: white;
+  color: white;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.titlebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  z-index: 2000;
+  padding: 15px;
+}
+
+.titlebar ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.titlebar li{
+  flex: 1 1 100%;
+  min-width: 0;
+  height: 5px;
+  border-radius: 2.5px;
+  background: rgba(212,212,212,.3);
+  position: relative;
+  margin-right: 3px;
+}
+.filled{
+  width: 100%;
+  height:100%;
+  background: #fff;
+  z-index: 2001;
+  position: absolute;
+  border-radius: 2.5px;
+}
+
+.nowPlaying{
+  width: 0;
+  height: 100%;
+  background: #fff;
+  z-index: 2001;
+  position: absolute;
+  border-radius: 2.5px;
+  animation: playing 30s;
+}
+@keyframes playing {
+  0%{   width: 0; }
+  25%{  width: 25%; }
+  50%{  width: 50%; }
+  75%{  width: 75%; }
+  100%{ width: 100%; }
+}
+
+@media (max-width:350px) {
+  .title{
+    max-width: 95%;
+  }
+  .subtitle{
+    max-width: 93%;
+  }
+}

@@ -1,0 +1,552 @@
+.card {
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 11px;
+padding-bottom: 9px ;
+position: relative;
+flex-shrink: 1;
+}
+.count{
+  text-align: center;
+  width: 20px;
+  font-weight: 900;
+  font-size: 16px;
+  margin-right: 1rem;
+}
+.card:hover{
+  background-color: #F7FBFF;
+}
+.cardCharts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11px;
+  padding-bottom: 9px ;
+  position: relative;
+  flex-shrink: 1;
+  width: 512px;
+}
+.cardCharts:hover{
+  background-color: #F7FBFF;
+}
+
+.img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.img:hover{
+  cursor: pointer;
+}
+
+ .img > img{
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+}
+.imgCharts{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  transform: scale(.73);
+}
+
+.imgCharts:hover{
+  cursor: pointer;
+}
+
+.imgCharts > img{
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+}
+
+
+.play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background-color: rgba(3, 3, 3, 0.835);
+  width: 4rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 10rem;
+}
+
+.play > svg{
+  position: absolute;
+  width: 1.35rem;
+  height: 1.55rem;
+  height: auto;
+  top: 50%;
+  left: 53%;
+  transform: translate3d(-50%,-50%,0);
+  color: white;
+}
+.playChart{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background-color: rgba(3, 3, 3, 0.835);
+  width: 4rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 10rem;
+  opacity: 0;
+  transition: opacity .3s cubic-bezier(.4,.2,0,1);
+}
+
+.playChart > svg{
+  position: absolute;
+  width: 1.35rem;
+  height: 1.55rem;
+  height: auto;
+  top: 50%;
+  left: 53%;
+  transform: translate3d(-50%,-50%,0);
+  color: white;
+}
+.card:hover .playChart{
+  opacity: 1;
+}
+
+.cardCharts:hover .playChart{
+  opacity: 1;
+}
+
+
+
+.trackInfo{
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+ padding-left: .3rem;
+}
+.trackInfo > * {
+  text-decoration: none ;
+}
+.trackInfoCharts{
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+ padding-left: .3rem;
+}
+.trackInfoCharts > * {
+  text-decoration: none ;
+}
+.songName{
+  text-align: start;
+  font-size: 16px;
+  font-weight: 900;
+  color: #242424;
+  flex-shrink: 0;
+ display: flex;
+ width: auto;
+ height: auto;
+ max-height: 21px;
+ max-width: 20rem;
+  width : 100px;
+  overflow:hidden;
+  display:inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+
+}
+.artist{
+  text-align: start;
+  color: #646464;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: .3rem;
+  padding-bottom: 8px;
+  padding-left: -1rem;
+  flex-shrink: 1;
+  width: 210px;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+  height: auto;
+}
+
+.additions{
+  display: flex;
+  margin: 6px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: flex-end;
+}
+.additionsCharts{
+  display: flex;
+  margin: 6px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: flex-end;
+}
+
+.card:hover .musicSvg{
+  opacity: 1;
+}
+.card:hover .more{
+  opacity: 1;
+}
+
+.cardCharts:hover .musicSvgCharts{
+  opacity: 1;
+}
+.cardCharts:hover .moreCharts{
+  opacity: 1;
+}
+
+.musicSvg{
+  background-color: black;
+ height: 2.2rem;
+ width: 6.6rem;
+  border: 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+}
+.musicSvgCharts{
+  background-color: black;
+  height: 2.2rem;
+  width: 6.6rem;
+   border: 0;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 1rem;
+   opacity: 0;
+   transition: opacity .3s ease-out;
+}
+.musicSvg:hover{
+  cursor: pointer;
+}
+.musicSvg > svg{
+  color: white;
+  height: auto;
+  width: 4.6rem;
+}
+
+.musicSvgCharts:hover{
+  cursor: pointer;
+}
+.musicSvgCharts > svg{
+  color: white;
+  height: auto;
+  width: 4.6rem;
+}
+.more {
+cursor: pointer;
+position: relative;
+opacity: 0;
+transition: opacity .3s ease-out;
+}
+.moreCharts{
+  cursor: pointer;
+position: relative;
+opacity: 0;
+transition: opacity .3s ease-out;
+}
+.more > svg{
+width: 1.9rem;
+height: 2.2rem;
+}
+.moreCharts > svg{
+  width: 1.9rem;
+  height: 2.2rem;
+  }
+.popup{
+left: 3rem;
+
+  bottom: -10px;
+  width: 320px;
+  height: 286.938px;
+  opacity: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 30%);
+  position: absolute;
+  color: rgba(0,0,0,.87);
+  text-align: left;
+  margin: 0;
+  padding: 0 16px;
+  outline-color: #bdbdbd;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 0;
+border-radius: 8px;
+background-color: red;
+z-index: 21;
+}
+
+.arrow{
+  border: solid black;
+  position: absolute;
+  right: -2.85rem;
+  top: -.2rem;
+  border: solid white;
+  border-width: 0 23px 23px 0;
+  padding: .1rem;
+  display: inline-block;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 30%);
+}
+
+
+
+.effect{
+  position: relative;
+  display: flex;
+  top: -3px;
+  width: 25px;
+  height: 15px;
+  right: -3rem;
+}
+
+.effectUl{
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  list-style-type: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  margin-left: -2rem;
+}
+.effectUl li {
+  width: 4px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  animation: dene ;
+  animation-iteration-count:infinite;
+}
+
+.effectUl li:nth-child(1) {
+  animation: dene ;
+  height: 10px; 
+  width: 4px;
+  animation-iteration-count:infinite;
+  animation-duration: 1.9s;
+  position: absolute;
+  z-index: 19900;
+  background-color: #08f;
+  bottom: 0;
+  margin-left: 5px;
+  animation-delay: .4s;
+}
+
+.effectUl li:nth-child(2) {
+  animation: dene ;
+  height: 10px; 
+  width: 4px;
+  animation-iteration-count:infinite;
+  animation-duration: 1.9s;
+  position: absolute;
+  z-index: 19900;
+  background-color: #08f;
+  bottom: 0;
+  margin-left: 10px;
+}
+
+.effectUl li:nth-child(3) {
+  animation: dene ;
+  height: 10px; 
+  width: 4px;
+  animation-iteration-count:infinite;
+  animation-duration: 1.9s;
+  position: absolute;
+  z-index: 19900;
+  background-color: #08f;
+  bottom: 0;
+  margin-left: 15px;
+  animation-delay: .2s;
+}
+@keyframes dene {
+  0% {height: 0%;}
+  30%{height: 65%;}
+  70% {height: 30%;}
+  100%{height:100%;}
+}
+
+
+.loadingCircleSvg{
+  width: 41px;
+  height: 41px;
+  stroke-dasharray: 205;
+  stroke-dashoffset: 205;
+color: #fff;
+transform: rotate(-90deg);
+}
+.loadingCircleWrapper{
+  position: absolute;
+  z-index: 999;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -50%,0);
+
+}
+
+.discWrap{
+ opacity: 1;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 25%;
+  left: 25.5%;
+  transform: translate3d(-50%, -50%,0);
+    z-index: 20;
+  box-sizing: border-box;
+  -webkit-animation: loading-disk 1s forwards linear infinite;
+animation: loading-disk 1s forwards linear infinite;
+ background-color: rgba(3, 3, 3, 0.835);
+border-radius: 50%;
+}
+
+.loadingDisc{
+  width: 4px;
+  height: 9px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 63%;
+  left: 40%;
+  transform: rotate(180deg);
+}
+
+@keyframes loading-disk {
+  0%{-webkit-transform: rotate(0);
+    transform: rotate(0);}
+100% {
+  -webkit-transform: rotate(
+359deg
+);
+  transform: rotate(
+359deg
+);
+}
+}
+.additionSecond{
+  display:none
+}
+
+@media (max-width: 1128px){
+.count{
+  margin-left: 1rem;
+}
+}
+
+
+@media (max-width:1024px) {
+  .trackInfoCharts{
+    position:relative;
+    top:-15px;
+    left: 10px;
+  }
+.additionsCharts{
+  display: flex;
+}
+  .imgCharts{
+    width: 90px;
+  height: 90px;
+  transform: scale(1.01);
+  }
+  .musicSvgCharts{
+    opacity: 1;
+    position:absolute;
+    left:14rem;
+    top:7rem;
+  }
+  .moreCharts{
+    opacity:1;
+    position:relative;
+    top: 30px;
+  }
+  .playChart{
+    opacity: 1;
+  }
+  .cardCharts{
+    width: auto;
+  }
+}
+
+
+@media (max-width:770px){
+  .trackInfo{
+    position:relative;
+    top:-15px;
+  }
+  .additions{
+    display: flex;
+  }
+  .musicSvg{
+    opacity:1;
+    position:absolute;
+    left:13rem;
+    top:6.7rem;
+  }
+  .more{
+    opacity:1;
+    position:relative;
+    top: 30px;
+  }
+}
+
+
+@media (max-width:770px) {
+  .cardCharts{
+    width: 95vw;
+  }
+}
+
+@media (max-width:500px){
+
+  .more{
+    opacity:1;
+    position:absolute;
+    left:60%;
+    top:6.7rem;
+  }
+}
+
+@media (max-width:420px) {
+  .artist{
+    width: 15rem;
+  }
+  .musicSvgCharts{
+    left: 38%;
+  }
+}
+
+@media (max-width:370px) {
+
+  .musicSvgCharts{
+    left: 42%;
+  }
+}

@@ -1,0 +1,78 @@
+.playerControl{
+    max-width: 120px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 13rem;
+    margin-right: 4rem;
+    margin-top: -3px;
+}
+
+.button{
+    border: 0;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button:disabled > svg{
+    color: #949494;
+}
+.button:disabled svg:hover {
+    cursor: default;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+svg{
+    width: 18px;
+    height: 18px;
+    color: #242424;
+}
+.musicControl svg:hover{
+ cursor: pointer;
+}
+
+@media (max-width:1310px) {
+    .playerControl{
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
+}
+@media (max-width:1150px) {
+    .playerControl{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .playerControl{
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:770px) {
+    .playerControl > button:nth-of-type(1){
+        display: none;
+    } 
+    .playerControl{
+        max-width: 68px;
+        min-width: 68px;
+        
+    }
+    .playerControl{
+        position: absolute;
+        right: 1.5rem;
+    }
+    .next{
+        width: 20px;
+        height: auto;
+    }
+}

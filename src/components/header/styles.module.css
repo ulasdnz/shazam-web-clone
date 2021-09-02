@@ -1,0 +1,274 @@
+.hd{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width:100vw;
+    min-width: 100vw;
+}
+
+
+.header{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1281px;
+    width: 95vw;
+    height: 74px;
+    background-color: transparent;
+    letter-spacing: .5px; 
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.headerSecond{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 1;
+    margin-left: -2.5rem;
+}
+.link{
+  padding: 15px 22px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-family: NeueMontreal, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-top: -1.5rem;
+}
+.link:hover{
+  text-decoration: underline;
+}
+.actions{
+    display: flex;
+    margin-right: 10px;
+}
+.uygulama{
+    margin-left: 2rem;
+    width: 17.5rem;
+    box-sizing: border-box;
+    height: 4.1rem;
+    background-color: rgba(255,255,255,.2);
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    font-family: NeueMontreal, Arial;
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: .5px;    
+}
+
+.search{
+    position: relative;
+    margin-right: -4.3rem;
+    width:30rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.connect{
+    background-color: white;
+    border: 0;
+    border-radius: 8px;
+    color: #08f;
+    padding: 0 2rem;
+    margin-left: 2rem;
+    width: 12.1rem;
+    height: 4rem;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shazamWrapper{
+width: 11rem;
+}
+.shazamWrapper:hover{
+    cursor: pointer;
+}
+.shazam{
+    height: auto;
+    width: 11.8rem;
+    flex-shrink: 0;
+    position: relative;
+    top: 2px;
+    left: -8px;
+    box-sizing: content-box;
+}
+
+.Music{
+width: 6rem;
+height: auto;
+position: relative;
+top: 1px;
+}
+.text{
+    font-weight: 900;
+    letter-spacing: .5px;
+    position: relative;
+    top: 1px;
+}
+
+
+.popupHeader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1999;
+    color: white;
+    -webkit-transition: transform .3s cubic-bezier(.4,.2,0,1);
+    transition: transform .3s ;
+    animation: popupHeader .3s cubic-bezier(.4,.2,0,1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes popupHeader {
+    from{ width: 0; top: 0; right: 0;  bottom: 0;    }
+    to{
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.popupItem{
+    display: block;
+    padding: 25px 0 25px 55px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.popShazam{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 55px;
+    font-size: 20px;
+    color: white;
+    margin-top: -2.7rem;
+    margin-left: -2rem;
+    margin-bottom: .6rem;
+}
+
+.popupCross{
+    height: auto;
+    color: white;
+    position: relative;    
+    padding: 27px;
+    padding-right: 5%;
+}
+.popupCrossSvg{
+    fill: white;
+    width: 16px;
+    height: 16px;
+}
+
+.popupConnect{
+    margin: 0 55px;
+    padding: 0 50px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 8px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.popupConnectSvgWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 4rem;
+    background-color:  rgba(255,255,255,.15)!important;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.popupConnectSvg{
+    width: 6rem;
+    height: auto;
+    position: relative;
+    color: white;
+    margin-left: 5px;
+}
+.popupConnectSvg{
+    cursor: pointer;
+}
+.iconHamburger{
+fill: white;
+display: none;
+margin-left: 2.5rem;
+margin-right: 3rem;
+width: 2rem;
+height: auto;
+}
+.iconHamburger:hover{
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1280px) {
+    .search{
+        width: 100%;
+    }
+}
+@media (max-width:1200px) {
+    .headerSecond{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:1150px) {
+    .search{
+        width: 100%;
+        margin-right: .1rem;
+    }
+    
+    .uygulama{
+    padding: 12px 15px;
+    }
+    .connect{
+        padding: 0 1.5rem;
+    }
+    .link{
+        padding: 15px 20px;
+    }
+    .shazam{
+        left: 2px;
+    }
+    .headerSecond{
+        margin-left: 2rem;
+    }
+    .link{
+        padding: 15px 15px;
+    }
+}
+@media (max-width:1024px) {
+    .actions{
+        display: none;
+    }
+    .headerSecond{
+        display: none;
+    }
+    .search{
+        width: 30rem;
+    }
+}
+
+
+@media (max-width:480px) {
+    .search{
+        display: none;
+    }
+}

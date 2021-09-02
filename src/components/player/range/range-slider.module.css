@@ -1,0 +1,38 @@
+.progressBar{
+	display: flex;
+    align-items: center;
+	position: relative;
+}
+.slider {
+	-webkit-appearance: none;
+	height: 4px;
+	overflow: hidden;
+	width: auto;
+	border-radius: 2px;
+}
+.thumb{
+	width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50px;
+    z-index: 1;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.slider::-ms-fill-upper {
+	background-color: #535353;
+  }
+  
+  .slider::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	height: 4px;
+  }
+
+  @media (max-width:770px) {
+	  .progressBar{
+		  position: absolute;
+		  top: -3px;
+		  left: 0;
+	  }
+  }

@@ -1,0 +1,370 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #141414;
+}
+.policy{
+    background-color: #5a5a5a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+.policy > p> a{
+    color: white;
+}
+.close{
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 2.5rem;
+    color: white;
+    font-size: 20px;
+    top: 8px;
+}
+
+.content{
+    display: block;
+    position: relative;
+    padding-top: 84px;
+    padding-bottom: 40px;
+    box-sizing: content-box;
+}
+
+.links{
+    width: 95%;
+    padding-bottom: 0;
+    margin-bottom: 64px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: -7.5rem;
+    display: flex;
+}
+
+.left{
+    width: 316px;
+}
+
+.left > svg{
+    width: 15rem;
+    height: auto;
+}
+.select{
+    position: relative;
+    background-color: transparent;
+    color: #949494;
+    width: 208px;
+    padding: 15px 45px 10px 15px;
+    -webkit-appearance: none;
+    font-size: 18px;
+    margin-top: -4.4rem;
+    margin-left: .5rem;
+}
+.select::before{
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -5px;
+    right: 30px;
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+    border-left: 2px solid #949494;
+    border-bottom: 2px solid #949494;
+    -webkit-transform: rotate(
+-45deg
+);
+    transform: rotate(
+-45deg
+);
+
+}
+select{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #949494;
+    border-radius: 0;
+    color: #949494;
+    width: 100%;
+    padding: 10px 32px 10px 15px;
+    -webkit-appearance: none;
+    font-size: 18px;
+    margin-left: -2rem;
+}
+select option{
+    background-color: #141414;
+    color: #949494;
+}
+.google{
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid #949494;
+    border-radius: 3px;
+    width: 110px;
+    height: 38px;
+}
+
+.options{
+    width: 95%;
+    padding-bottom: 0;
+    max-width: 1100px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2.5rem;
+}
+.options > * {
+    margin-right: 2rem;
+
+}
+
+.optionImg {
+    width: 14rem;
+    height: 3.8rem;
+ 
+}
+.GalaxyStore{
+    width: 14rem;
+    height: 3.8rem;
+    object-fit: cover;
+}
+.blank{
+    width: 316px;
+    position: relative;
+}
+
+.rightSide{
+    min-width: 150px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    flex-shrink: 0;
+}
+.rightSide  h3{
+    color: #949494;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: start;
+    width: 100%;
+}
+
+.rightSide > ul > li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 8px 0;
+    list-style-type: none;
+    text-align: start;
+}
+.rightLinkItem{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.rightSideSecond{
+    min-width: 150px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    flex-shrink: 0;
+    padding-left: 8%;
+}
+
+.rightSideSecond > h3{
+    color: #949494;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: start;
+    width: 100%;
+}
+
+.rightSideSecond > ul > li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 8px 0;
+    list-style-type: none;
+    text-align: start;
+}
+
+
+.follow{
+    margin-top: 4.5rem;
+}
+
+.follow > ul{
+    list-style-type: none;
+margin-left: 1.8rem;
+}
+.follow > ul{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow > h3{
+    text-align: center;
+    margin-bottom: 26px;
+    color: #949494;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+
+
+.copyright{
+    color: #646464;
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 26px;
+}
+
+.copyLink{
+    color: #646464;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.supply {
+    max-width: 100%;
+    font-size: 14px;
+    color: #646464;
+    letter-spacing: -.5px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8rem;
+
+}
+
+@media (max-width:790px){
+
+.content{
+    width: 90%;
+    text-align: center;
+    padding-top: 2rem;
+}
+footer{
+    margin-top: -5rem;
+}
+.links{
+    display:inline;
+}
+.blank{
+    width:0;
+    height:0;
+    display:none;
+}
+.left{
+    width: 100%;
+    min-width: 100vw;
+    max-width: 100%;
+    text-align: center;
+}
+.select{
+    width: auto;
+    max-width: 257px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: -4rem;
+}
+
+.select select{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #949494;
+    border-radius: 0;
+    color: #949494;
+    -webkit-appearance: none;
+    font-size: 18px;
+    min-width:210px;
+    max-width:210px;
+    padding: 10px 38px 10px 15px;
+    margin-left:8%;
+
+}
+
+.rightSide{
+    margin-left: 13%;
+    padding: 0;
+    width: 30%;
+    min-width: 30%;
+    max-width: 50%;
+    display:inline-flex;
+    margin-top: -1rem;
+}
+.rightSideSecond{
+    width: 30%;
+    min-width: 30%;
+    max-width: 50%;
+    margin-left: 15%;
+    padding: 0;
+    display:inline-flex;
+    justify-self: flex-end;
+}
+
+    .options{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+        width: 100%;
+        padding-left: 30px;
+        text-align: center;
+    }
+    .options >*{
+        margin-right: 20px;
+        margin-top: 20px;    
+        flex-shrink: 0;
+    }
+    .follow{
+        display:block;
+        text-align:center;
+        width:100vw;
+    }
+    .policy{
+        padding-right: 3rem;
+    }
+    .close{
+     right: 2rem;   
+    }
+}
+@media (max-width:510px){
+    .options{
+        display: inline;
+    }
+    .policy{
+        padding-left: 1rem;
+    }
+}
+@media (max-width:330px){
+    .options{
+        display: flex;
+        flex-direction: column;
+    }
+  
+}

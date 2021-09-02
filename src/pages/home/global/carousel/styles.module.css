@@ -1,0 +1,69 @@
+.home{
+  width: 1128px;
+}
+
+.caption > h2{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.caption{
+  padding: 10px 0;
+   margin: 40px auto 30px;
+   max-width: 1128px;
+   width: 95vw;
+   border-bottom: 1px solid #e4e4e4;
+   position: relative;
+}
+.showAll{
+  position: absolute;
+  right: 0;
+  top: 1.4rem;
+  text-decoration: none;
+  color: #08f;
+  font-weight: 900;
+
+  letter-spacing: .5px;
+
+}
+
+
+
+
+.captionSecond > h2{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.captionSecond{
+  padding: 10px 0;
+   margin: 40px auto 30px;
+   max-width: 1128px;
+   border-bottom: 1px solid #e4e4e4;
+   position: relative;
+}
+
+@media (max-width:1128px) {
+  .home{
+    width: 95vw;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .profiles{
+    width: 99vw;
+    margin-left: -1.5rem;
+  }
+}
+
+@media (max-width:500px) {
+  .songs{
+    margin-left: -12px;
+  }
+  .caption > h2{
+    width: 56%;
+  }
+}
+

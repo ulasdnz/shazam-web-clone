@@ -1,0 +1,76 @@
+
+  .loadButton{
+    position: relative;
+    display: inline-block;
+    background-color: #08f;
+    border-radius: 5px;
+    border: none;
+    height: auto;
+    width: auto;
+    padding: 17px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 22px;
+    transition: box-shadow .2s cubic-bezier(.4,.2,0,1);
+    margin-bottom: 1rem;
+   }
+
+   .loadButton:active{
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.657);
+    cursor: pointer;
+  }
+  .loadButton:hover{
+    cursor: pointer;
+  }
+  .loadButton:disabled{
+    opacity: .5;
+    cursor: default;
+  }
+  .loadButton:disabled .loadButton:hover{
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  
+.loadButtonLarge{
+  position: relative;
+  display: inline-block;
+  background-color: #08f;
+  border-radius: 5px;
+  border: none;
+  height: 54px;
+  width: 300px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 22px;
+  transition: box-shadow .2s cubic-bezier(.4,.2,0,1);
+  margin-bottom: 1rem;
+  margin-top: 9px;
+}
+
+.loadButtonLarge:active{
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.657);
+  cursor: pointer;
+}
+.loadButtonLarge:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.657);
+}
+.loadButtonLarge:disabled{
+  opacity: .5;
+  cursor: default;
+}
+.loadButtonLarge:disabled .loadButtonLarge:hover{
+  cursor: pointer;
+  pointer-events: none;
+}
