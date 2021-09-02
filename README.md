@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Preview Link
-- [Shazam Web Clone]()
+- [Shazam Web Clone](https://shazam-clone-40b98.web.app/)
 
 
 ## Installation
