@@ -9,10 +9,10 @@ const Download = () => {
         className={styles.imgWrapper}
         style={{ maxWidth: '600px', maxHeight: '738px' }}
       >
-        <img src="https://www.shazam.com/resources/ec5e994effe5843ced9530e39ce52a5889643dd1/home/group.png" alt="Phone" className={styles.phone} />
+        <img src="https://www.shazam.com/resources/4f0209df59a92cd87d564361cebf0a002bc9f87f/home/group.png" alt="Phone" className={styles.phone} />
       </div>
       <div className={styles.imgWrapperSmall}>
-        <img src="https://www.shazam.com/resources/ec5e994effe5843ced9530e39ce52a5889643dd1/home/android.png" alt="Phone" className={styles.android} />
+        <img src="https://www.shazam.com/resources/4f0209df59a92cd87d564361cebf0a002bc9f87f/home/group.png" alt="Phone" className={styles.android} />
       </div>
       <div className={styles.info}>
         <h2>Etrafında çalan şarkıları tanımla</h2>
@@ -25,7 +25,7 @@ const Download = () => {
         <div className={styles.scan}>
           <div className={styles.QrCode}>
             <img
-              src= "https://www.shazam.com/resources/ec5e994effe5843ced9530e39ce52a5889643dd1/apps/qrcodes/home.png"
+              src= "https://www.shazam.com/resources/4f0209df59a92cd87d564361cebf0a002bc9f87f/apps/qrcodes/home.png"
               alt="QrCode"
               style={{ width: '100px', height: '100px' }}
             ></img>
